@@ -1,0 +1,97 @@
+.projects {
+  width: 80%;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #141c6e;
+  margin-bottom: 40px;
+}
+
+.projects-slider {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  gap: 12px;
+}
+
+.project {
+  flex: 1;
+  position: relative;                 /* 🔥 FIX 1 */
+  background-size: cover;
+  background-position: center;
+  transition: flex 0.5s ease;
+  cursor: pointer;
+  border: 1px solid #141c6e;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.project:hover {
+  flex: 2.5;
+}
+
+.projects-slider:hover .project:not(:hover) {
+  flex: 0.8;
+}
+
+/* Overlay */
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;               /* 🔥 FIX 4 */
+}
+
+.project:hover .project-overlay {     /* 🔥 FIX 2 */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-overlay h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.project-overlay p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+/* Button */
+.project-btn {
+  padding: 8px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .project {
+  flex: 1;
+  min-width: 100%;
+  }
+
+  .projects-slider {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  gap: 12px;
+  }
+}
