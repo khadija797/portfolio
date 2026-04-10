@@ -23,25 +23,29 @@ export const projects = [
   {
     id: 2,
     image: project_2,
-    title: "E-commerce UI",
+    title: "Lolo & Popo",
     desc: "Modern shopping interface",
+    link: "https://toys-store-react-frontend.vercel.app/"
   },
   {
     id: 3,
     image: project_3,
-    title: "Business Website",
-    desc: "Clean corporate layout",
+    title: "Xpenso",
+    desc: "Expense Tracker App",
+    link: "https://xpenso-wheat.vercel.app/"
   },
   {
     id: 4,
     image: project_4,
-    title: "Landing Page",
-    desc: "High-conversion landing design",
+    title: "Flexify",
+    desc: "Costume Store UI",
+    link: "https://flexify-snowy.vercel.app/"
   },
   {
     id: 5,
     image: project_5,
-    title: "Dashboard UI",
-    desc: "Admin dashboard interface",
+    title: "Findish",
+    desc: "Food Recipe Finder",
+    link: "https://food-recipe-finder-vert.vercel.app/"
   },
 ];

@@ -21,7 +21,7 @@
 
 .project {
   flex: 1;
-  position: relative;                 /* 🔥 FIX 1 */
+  position: relative;               
   background-size: cover;
   background-position: center;
   transition: flex 0.5s ease;
@@ -50,14 +50,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
-  pointer-events: none;               /* 🔥 FIX 4 */
+  pointer-events: auto;              
 }
 
-.project:hover .project-overlay {     /* 🔥 FIX 2 */
+.project:hover .project-overlay {     
   opacity: 1;
   transform: translateY(0);
 }

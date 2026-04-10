@@ -9,10 +9,9 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <h3 className='logo'> Khadija Rafiq </h3>
+      <a href='/cv.pdf' target='_blank' className='logo'> Khadija Rafiq </a>
       <ul className="navbar-menu">
         <Link to='/' onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>Home</Link>
-
         <a href='#about' onClick={() => setMenu("about")} className={menu === "about" ? "active" : ""}>About</a>
         <a href='#skills' onClick={() => setMenu("skills")} className={menu === "skills" ? "active" : ""}>Skills</a>
         <a href='#projects' onClick={() => setMenu("projects")} className={menu === "projects" ? "active" : ""}>Projects</a>

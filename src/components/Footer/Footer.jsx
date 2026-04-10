@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import { assets } from '../../assets/assets'
+import { FaGithub, FaLinkedin, FaGlobe } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -8,23 +8,23 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-content-left">
           <h3>Khadija Rafiq</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, magnam maxime. Voluptate modi aliquid est esse voluptatum perspiciatis non ipsam?</p>
+          <p>Built with React.js. Focused on creating modern, <br />responsive, and user-friendly web applications.</p>
           <div className="footer-social-icons">
-            <img src={assets.linkedin_icon} alt="" />
-            <img src={assets.twitter_icon} alt="" />
+            <a href="https://github.com/khadija797" target='_blank'>
+              <FaGithub />
+            </a>
+            <a href="https://linkedin.com/in/khadija-rafiq-72a5561a7" target='_blank'>
+              <FaLinkedin />
+            </a>
+            <a href="https://vercel.com/khadija797s-projects" target='_blank' >
+              <FaGlobe />
+            </a>
           </div>
-        </div>
-        <div className="footer-content-center">
-          <h3>COMPANY</h3>
-          <li>Home</li>
-          <li>About</li>
-          <li>Skills</li>
         </div>
         <div className="footer-content-right">
           <h3>GET IN TOUCH</h3>
           <ul>
-            <li>123456789</li>
-            <li>contact@khadija.com</li>
+            <li>khadija62.dev@email.com</li>
           </ul>
         </div>
       </div>
@@ -33,5 +33,4 @@ const Footer = () => {
     </div>
   )
 }
-
 export default Footer

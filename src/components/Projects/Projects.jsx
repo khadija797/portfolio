@@ -16,7 +16,9 @@ const Projects = () => {
             <div className="project-overlay">
               <h3>{project.title}</h3>
               <p>{project.desc}</p>
-              <button className="project-btn">View Project</button>
+              <a href={project.link}
+                target="_blank"
+                className="project-btn">View Project</a>
             </div>
           </div>
         ))}
