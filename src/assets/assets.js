@@ -1,6 +1,4 @@
 import profile from './profile.png'
-import linkedin_icon from './linkedin_icon.png'
-import twitter_icon from './twitter_icon.png'
 import project_1 from './project_1.jpeg'
 import project_2 from './project_2.png'
 import project_3 from './project_3.png'
@@ -9,8 +7,6 @@ import project_5 from './project_5.png'
 
 export const assets = {
   profile,
-  linkedin_icon,
-  twitter_icon,
 }
 
 export const projects = [
