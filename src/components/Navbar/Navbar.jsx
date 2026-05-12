@@ -11,7 +11,16 @@ const Navbar = () => {
     <div className='navbar'>
       <a href='/cv.pdf' target='_blank' className='logo'> Khadija Rafiq </a>
       <ul className="navbar-menu">
-        <Link to='/' onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>Home</Link>
+       <Link
+  to="/"
+  onClick={() => {
+    setMenu("home");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }}
+  className={menu === "home" ? "active" : ""}
+>
+  Home
+</Link>
         <a href='#about' onClick={() => setMenu("about")} className={menu === "about" ? "active" : ""}>About</a>
         <a href='#skills' onClick={() => setMenu("skills")} className={menu === "skills" ? "active" : ""}>Skills</a>
         <a href='#projects' onClick={() => setMenu("projects")} className={menu === "projects" ? "active" : ""}>Projects</a>
@@ -28,6 +37,7 @@ const Navbar = () => {
         </a>
       </div>
     </div>
+
   )
 }
 

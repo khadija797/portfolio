@@ -7,7 +7,7 @@ import Contact from '../../components/Contact/Contact'
 
 const Home = () => {
   return (
-    <div>
+    <div className='home' id='home'>
       <Hero />
       <About />
       <Skills />

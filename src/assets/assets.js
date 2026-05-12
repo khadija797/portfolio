@@ -1,5 +1,5 @@
 import profile from './profile.png'
-import project_1 from './project_1.jpeg'
+import project_1 from './project_1.png'
 import project_2 from './project_2.png'
 import project_3 from './project_3.png'
 import project_4 from './project_4.png'
@@ -13,8 +13,9 @@ export const projects = [
   {
     id: 1,
     image: project_1,
-    title: "Portfolio Website",
-    desc: "Personal portfolio built with React",
+    title: "Student Result Manager",
+    desc: "Array based project built with React",
+    link: "https://student-result-manager-kappa.vercel.app/"
   },
   {
     id: 2,

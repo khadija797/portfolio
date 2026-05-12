@@ -7,9 +7,13 @@
   font-family: Outfit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
-  background: #cac9c9;
+ background: #f5f7fa;
 }
 
 a {
