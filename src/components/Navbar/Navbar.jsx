@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './Navbar.css'
-import { assets } from '../../assets/assets'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
@@ -9,7 +8,15 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <a href='/cv.pdf' target='_blank' className='logo'> Khadija Rafiq </a>
+      <Link to='/' onClick={()=> {setMenu("home");
+        window.scrollTo({ top: 0, behavior: "smooth"});      
+      }}
+      className='logo'>
+        <div className='name'> 
+        Khadija Rafiq
+        </div>
+        <small>Frontend Developer</small>
+      </Link>
       <ul className="navbar-menu">
        <Link
   to="/"
@@ -33,7 +40,7 @@ const Navbar = () => {
           rel="noopener noreferrer"
           className="navbar-btn"
         >
-          WhatsApp
+          Let's Talk
         </a>
       </div>
     </div>

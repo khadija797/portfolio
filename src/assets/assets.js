@@ -9,6 +9,16 @@ export const assets = {
   profile,
 }
 
+export const skillsData = [
+  'HTML5',
+  'CSS3',
+  'JavaScript',
+  'Responsive Design',
+  'React.js',
+  'Git & GitHub',
+  'UI/UX'
+];
+
 export const projects = [
   {
     id: 1,

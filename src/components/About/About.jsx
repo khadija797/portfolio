@@ -18,17 +18,12 @@ const About = () => {
           <h2>About Me</h2>
 
           <p>
-            I'm a frontend developer who focuses on building clean, modern, and
-            responsive web experiences. I specialize in React.js and enjoy
-            turning ideas into smooth, functional user interfaces.
+            I'm a frontend developer who loves creating clean, modern, and responsive websites. I work mainly with React.js and enjoy turning ideas into simple, smooth, and easy-to-use interfaces.
           </p>
-
           <p>
-            My focus is on writing clean code, creating intuitive layouts, and
-            delivering websites that are fast, responsive, and user-friendly.
+            I focus on writing clean code, building user-friendly designs, and creating websites that work well on every screen. My goal is to build experiences that are not only functional but also enjoyable for users.
           </p>
         </div>
-
       </div>
     </section>
   );
